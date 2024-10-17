@@ -1,0 +1,45 @@
+/* Container do header */
+.header-container {
+    max-width: 1600px ;
+    width: 80%;
+    display: flex;
+    justify-content: space-around; 
+    background-color: #1f1f1f; 
+    padding: 15px;
+    margin-top: 14px;
+    border-radius: 5px;
+}
+
+.header-container a {
+    color: #ffffff; 
+    text-decoration: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+
+.active-link {
+    background-color: #ff4655; 
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Efeito hover nos links */
+.header-container a:hover {
+    background-color: #333333; 
+}
+
+
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .header-container a {
+        width: 100%; 
+        text-align: center;
+    }
+}

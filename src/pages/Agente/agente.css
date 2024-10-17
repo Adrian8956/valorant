@@ -1,0 +1,114 @@
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+
+  .info-agente-individual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+  }
+  
+
+  @media (min-width: 768px) {
+    .info-agente-individual {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      text-align: left;
+    }
+  }
+  
+
+  .agente-info {
+    max-width: 600px;
+  }
+  
+  /* Nome do agente */
+  .agente-info h1 {
+    font-size: 36px;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+
+  .agente-role {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .agente-role h2 {
+    font-size: 24px;
+    color: #ccc;
+  }
+  
+  .role-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .agente-info p {
+    font-size: 16px;
+    color: #ccc;
+    margin-top: 20px;
+    line-height: 1.6;
+  }
+  
+
+  .agente-image {
+    flex-shrink: 0;
+  }
+  
+  .agente-main-image {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  @media (max-width: 767px) {
+    .agente-main-image {
+      max-width: 100%;
+    }
+  
+    .agente-role {
+      justify-content: center;
+    }
+  }
+  
+  
+  @media (min-width: 1024px) {
+    .agente-info h1 {
+      font-size: 48px;
+    }
+  
+    .agente-role h2 {
+      font-size: 30px;
+    }
+  
+    .role-icon {
+      width: 50px;
+      height: 50px;
+    }
+  
+    .agente-info p {
+      font-size: 25px;
+      line-height: 1.8;
+    }
+  
+    .agente-main-image {
+      max-width: 700px;
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    }
+  
+    .info-agente-individual {
+      gap: 40px;
+    }
+  }
+  

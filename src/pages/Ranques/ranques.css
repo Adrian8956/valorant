@@ -1,0 +1,58 @@
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Lista de ranques como grid */
+.list-ranques {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* Cada card de ranque */
+.card-ranque {
+    background-color: #2c2f33; /* Cor de fundo do card */
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-ranque img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.card-ranque h2 {
+    font-size: 18px;
+    color: #ffffff; /* Cor do título */
+    margin: 10px 0 0 0;
+}
+
+/* Efeito ao passar o mouse */
+.card-ranque:hover {
+    transform: scale(1.05); /* Pequeno aumento no card */
+}
+
+/* Layout para telas maiores */
+@media (min-width: 1024px) {
+    .list-ranques {
+        grid-template-columns: repeat(4, 1fr); /* Exibe 4 colunas em telas maiores */
+    }
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .list-ranques {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Ajusta para telas menores */
+    }
+
+    .card-ranque img {
+        width: 80px;
+        height: 80px;
+    }
+}
